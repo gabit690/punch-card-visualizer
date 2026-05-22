@@ -17,12 +17,12 @@ Each characted entered by the user is translated into a hole pattern displayed a
 
 Clone the repository:
 ```bash
-git clone repository-url
+git clone https://github.com/gabit690/punch-card-visualizer.git
 ```
 
 Move into the project directory:
 ```bash
-cd project-folder
+cd punch-card-visualizer
 ```
 
 Install dependencies:
