@@ -12,25 +12,30 @@ Each characted entered by the user is translated into a hole pattern displayed a
 - Typescript
 - shadcn/ui
 - Tailwind CSS
+- Vitest
 
 ## Running Locally
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/gabit690/punch-card-visualizer.git
 ```
 
 Move into the project directory:
+
 ```bash
 cd punch-card-visualizer
 ```
 
 Install dependencies:
+
 ```bash
 pnpm i
 ```
 
 Start the development server:
+
 ```bash
 pnpm dev
 ```
