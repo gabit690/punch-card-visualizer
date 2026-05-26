@@ -13,6 +13,7 @@ Each characted entered by the user is translated into a hole pattern displayed a
 - shadcn/ui
 - Tailwind CSS
 - Vitest
+- React Testing Library
 
 ## Running Locally
 
