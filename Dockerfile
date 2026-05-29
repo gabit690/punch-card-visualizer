@@ -1,15 +1,15 @@
-FROM node:24.16.0-alpine3.23
+FROM node:24.16.0-alpine3.23 AS build
 
 WORKDIR /app
 
 RUN corepack enable
 
-ENV HUSKY=0
-
 COPY . .
 
-RUN pnpm install
+RUN pnpm build
 
-EXPOSE 5173
+FROM nginx:stable-alpine3.23-perl
 
-CMD ["pnpm", "run", "dev"]
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
